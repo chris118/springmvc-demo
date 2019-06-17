@@ -1,4 +1,4 @@
-package Model;
+package com.demo.Model;
 
 public class User {
     private String username;

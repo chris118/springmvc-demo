@@ -1,4 +1,4 @@
-package Model;
+package com.demo.Model;
 
 public class Student {
     public Integer getAge() {

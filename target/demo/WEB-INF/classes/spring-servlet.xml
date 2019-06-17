@@ -13,7 +13,7 @@
     <context:annotation-config/>
 
     <!-- 启动包扫描功能，以便注册带有@Controllers、@service、@repository、@Component等注解的类成为spring的bean -->
-    <context:component-scan base-package="controllers">
+    <context:component-scan base-package="com.demo">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
