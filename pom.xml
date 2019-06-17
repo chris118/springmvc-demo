@@ -63,6 +63,7 @@
       <version>2.0.4.RELEASE</version>
     </dependency>
 
+
     <!-- Needed for XML View (with JAXB2) -->
     <dependency>
       <groupId>org.springframework</groupId>
@@ -95,6 +96,16 @@
       <artifactId>poi</artifactId>
       <version>3.10-beta2</version>
     </dependency>
+
+    <!--响应数据转换成JSON字符串-->
+    <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl -->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <version>1.9.13</version>
+    </dependency>
+
+
 
 
 

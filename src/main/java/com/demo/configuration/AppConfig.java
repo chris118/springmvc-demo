@@ -1,8 +1,11 @@
 package com.demo.configuration;
 
 import com.demo.Model.Pizza;
+import com.demo.viewresolver.ExcelViewResolver;
+import com.demo.viewresolver.Jaxb2MarshallingXmlViewResolver;
+import com.demo.viewresolver.JsonViewResolver;
+import com.demo.viewresolver.PdfViewResolver;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
@@ -14,10 +17,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
-import com.demo.viewresolver.ExcelViewResolver;
-import com.demo.viewresolver.Jaxb2MarshallingXmlViewResolver;
-import com.demo.viewresolver.JsonViewResolver;
-import com.demo.viewresolver.PdfViewResolver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,8 +31,8 @@ public class AppConfig extends WebMvcConfigurerAdapter {
      */
     @Override
     public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
-        configurer.ignoreAcceptHeader(true).defaultContentType(
-                MediaType.TEXT_HTML);
+//        configurer.ignoreAcceptHeader(true).defaultContentType(
+//                MediaType.TEXT_HTML);
     }
 
     /*
